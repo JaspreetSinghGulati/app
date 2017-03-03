@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html ng-app="ui.bootstrap.demo">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="example.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body> 
+    <header>
+      <div style="background-color: #37474F;padding-left: 14px;position: relative;font-size: 16px;">
+        <select  style="background-color: #37474F;color: white;border:0px">
+          <option value="coltd" selected="selected">Yellow Tower Co Ltd</option>
+        </select>
+        <span class="glyphicon glyphicon-question-sign" style="color:white;left: 85%;"></span>
+      </div>
+      <div class="row h-1">
+        <div class="col-sm-3" style="left:60px">
+          <button style="background-color: #2984FC;border: 0px;color: white;font-size: 11px;padding: 6px 40px 6px 40px;">NEW</button>
+        </div>
+        <div class="col-sm-7" style="padding-top: 4px;font-size: 18px;">
+          <span style="color: #7E7E7E;position: relative;">Our Businesse > </span>
+          <span class="mdl-selectfield">
+            <select class="browser-default"  style="color: #37474F;border: 0px;background-color: transparent;font-weight: 500;">
+              <option value="coltd" selected="selected">Yellow Tower Co Ltd.</option>
+            </select>
+          </span>
+        </div>
+        <div class="col-sm-1" style="padding-top:9px;font-size: 22px;">
+            <span style="color: #7E7E7E"><i class="material-icons" style="font-size:29px">view_compact</i></span>
+        </div>
+        <div class="col-sm-1" style="padding-top:9px;">
+            <span><i class="material-icons" style="font-size:29px">clear</i></span>
+        </div>
+      </div>
+    </header>
+<div class="row">
+    <div class="col-sm-2" style="top: 22px;position: relative;left: 10px;">
+    <i style="position: absolute;pointer-events: none;top: 1px;" class="material-icons">search</i>
+      <input style="padding-left: 22px;" type="text" placeholder="Search"/>
+    </div>
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4 col-sm-4" style="box-shadow: 0px 0px 4px #888888;background-color: white;width: 495px;height: 305px;top: 9px;position: relative;left:154px">
+      <label style="color: #000000;top: 20px;position: relative;padding-left: 19px;    font-weight: 300;">
+      Yellow Tower Co. Ltd.……………….………………………….……….Business in Penh Penh
+      </label>
+    </div>
+     <div class="col-sm-4 col-sm-4" style="box-shadow: 0px 0px 4px #888888;background-color: white;width: 495px;height: 305px;top: 10px;position: relative;left: 889px;padding:0px">
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:305px;width:495px;padding-left:0px'><div id='gmap_canvas' style='height:305px;width:495px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="http://phplinkdir.com/">add your link</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </div>
+
+</div>
+
+<div class="row" style="bottom: 560px;position: relative;">
+    <div class="col-sm-2" style="top: 35px;position: relative;left: 10px;">
+     <dd>
+      <span style="font-size: 20px;bottom: 6px;position: relative;right: 8px;font-weight: bold;">|</span>
+      <i class="material-icons">business_center</i><span style="padding-left: 15px;bottom: 5px;position: relative;font-weight: bold;">Our Business</span></dd>
+      <dd><i class="material-icons" style="padding-left: 8px;">business</i><span style="padding-left: 15px;bottom: 5px;position: relative;">Our Directory</span></dd>
+      <dd><i class="material-icons" style="padding-left: 8px;">contact_mail</i><span style="padding-left: 15px;bottom: 5px;position: relative;">Communcity Directories</span></dd>
+    </div>
+  </div>
+
+  <uib-accordion close-others="oneAtATime" style="bottom: 112px;position: relative;">
+      <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+      <div class="col-sm-4">
+       <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+         Yellow Tower Co. Ltd.……………….………………………….……….Business in Penh Penh..
+        </label>
+      </div>
+    </div>
+  </uib-accordion>
+
+   <uib-accordion close-others="oneAtATime" style="bottom: 130px;position: relative;">
+      <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+      <div class="col-sm-4">
+       <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+        Member………..……………..…………………………………….……………Since 19978 | Enhanced
+        </label>
+      </div>
+    </div>
+  </uib-accordion>
+
+  <uib-accordion close-others="oneAtATime" style="bottom: 147px;;position: relative;">
+      <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+      <div class="col-sm-4">
+       <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+        Missing headline
+        </label>
+      </div>
+    </div>
+  </uib-accordion>
+   <uib-accordion close-others="oneAtATime" style="bottom: 164px;position: relative;">
+      <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+      <div class="col-sm-4">
+      <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+      </label>
+    </div>
+    </div>
+    </uib-accordion>
+
+   <uib-accordion close-others="oneAtATime" style="bottom: 180px;position: relative;">
+        <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+        <div class="col-sm-4">
+        <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+        No 191, Tonle Sap Road, Sangkat Chory Changvar, 1012 Phnom Penh, Cambodia
+        </label>
+      </div>
+      </div>
+  </uib-accordion>
+
+  <uib-accordion close-others="oneAtATime" style="bottom: 196px;position: relative;">
+      <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+      <div class="col-sm-4">
+      <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+      Mobile phone | English……………………………………………………….………..012 889 111
+Email…………………………………………………………………….……..info@yellow-tower.com
+Whatsapp…………………………………………………………………………….………….012 887 111
+      </label>
+    </div>
+    </div>
+    </uib-accordion>
+ <uib-accordion close-others="oneAtATime" style="bottom: 211px;position: relative;">
+      <div uib-accordion-group class="panel-default acd-1" heading="Any box expand.." is-open="flase">
+      <div class="col-sm-4">
+            <label style="color: #000000;position: relative;padding-left: 19px;    font-weight: 300;">
+            Any box expand like this when cliked on
+            </label>
+      </div>
+    </div>
+ </uib-accordion>
+
+    <footer>
+    <!--<span class="glyphicon glyphicon-th"></span>-->
+    </footer>
+    <<script>
+      angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+angular.module('ui.bootstrap.demo').controller('AccordionDemoCtrl', function ($scope) {
+  $scope.oneAtATime = true;
+
+  $scope.groups = [
+    {
+      title: 'Dynamic Group Header - 1',
+      content: 'Dynamic Group Body - 1'
+    },
+    {
+      title: 'Dynamic Group Header - 2',
+      content: 'Dynamic Group Body - 2'
+    }
+  ];
+
+  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
+
+  $scope.addItem = function() {
+    var newItemNo = $scope.items.length + 1;
+    $scope.items.push('Item ' + newItemNo);
+  };
+
+  $scope.status = {
+    isCustomHeaderOpen: false,
+    isFirstOpen: true,
+    isFirstDisabled: false
+  };
+});
+    </script>
+  </body>
+</html>
